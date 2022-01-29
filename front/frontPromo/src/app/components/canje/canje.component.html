@@ -1,0 +1,8 @@
+<form [formGroup]="miFormulario"  (ngSubmit)="Guardar()" novalidate="">
+  <div class="form-group">
+    <label>Codigo</label>
+    <input type="text" formControlName="codigo" class="form-control" placeholder="Ingrese nombre">
+  </div>
+
+  <button type="submit" class="btn btn-primary" [disabled]="!miFormulario.valid">Generar</button>
+</form>
